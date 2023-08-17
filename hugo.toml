@@ -1,0 +1,152 @@
+title = "Wild Tech 'Garden' Demos Placeholder"
+baseURL = "https://www.wtg-demos.ca/"
+defaultContentLanguage = "en"
+disableAliases = true
+enableGitInfo = true
+enableRobotsTXT = true
+ignoreErrors = ["error-output-taxonomy"]
+languageCode = "en-CA"
+paginate = 10
+paginatePath = "page"
+rssLimit = 20
+theme ="github.com/wildtechgarden/zen-theme-hugo-wtg"
+timeout = "600s"
+
+[taxonomies]
+tag = "tags"
+
+[frontmatter]
+lastmod = [":git", "lastmod", ":fileModTime", "date", "publishDate"]
+
+[permalinks]
+"/" = "/:sections/:slug"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.parser.attribute]
+block = true
+
+[markup.goldmark.renderer]
+unsafe = false
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.tableOfContents]
+endLevel = 5
+ordered = true
+startLevel = 2
+
+[outputFormats]
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.htaccess]
+baseName = ""
+isPlainText = true
+mediaType = "text/htaccess"
+
+[mediaTypes]
+[mediaTypes."text/htaccess"]
+suffixes = ["htaccess"]
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "SearchIndex", "htaccess"]
+section = ["HTML", "RSS", "JSON"]
+taxonomy = ["HTML", "RSS", "JSON"]
+term = ["HTML", "RSS", "JSON"]
+
+[params]
+#blogSections = []
+#breadcrumbSections = [
+#	"",
+#	"about",
+#	"blog",
+#	"tags"
+#]
+contact = "dfdpublic@wildtechgarden.ca"
+copyright = """\
+	This site is licensed under a \
+	[Creative Commons Attribution-ShareAlike 4.0 International \
+	License](https://creativecommons.org/licenses/by-sa/4.0/).\
+"""
+description = "Placeholder for top-level www.wtg-demos.ca website host (the main effort is in subsites)"
+dateformat = "2 January, 2006"
+#favicon = "apple-touch-icon.png" # Relative path to favicon in json feed, no leading slash.
+feedlinks = true # Show feed links in the footer.
+footer = "[Accessibility](/about/accessibility) | [Privacy](/about/privacy-policy) | [Sitemap](/about/user-sitemap) | [Search](/about/search) | [Report an issue](https://github.com/wildtechgarden/www-wtg-demos/issues/new/choose)"
+#icon = "apple-touch-icon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
+#image = "images/daniel-beard-almost-floating-head-social.png" # Relative path to site image in JSON-LD, no leading slash.
+#imageMaxWidth = 400 # Max width for images added via figure shortcode.
+logo = false
+#logoHeight = 32
+#logoWidth = 32
+#mainSections= ["blog"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
+mobileMenu = true # Turn on a mobile menu on small screens.
+noImageConvert = false
+noSrcSetDefault = false
+pageCanonical = true
+poweredby = true # Show powered by hugo in footer
+realfavicongenerator = false # If full set of favicons, site manifest etc. exists, default false.
+redirectsDomains = [
+	"wtg-demos.ca",
+	"wtg-demos.com",
+	"www.wtg-demos.com"
+]
+
+redirectsExtra = []
+
+relatedposts = true # Show related posts under a "See also" section, default false.
+sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
+searchAllPages = true
+sidebar = true # Show a sidebar to the right, default false.
+submitted = true # Show author and date information for a post.
+tables = true # Enable responsible table JavaScript
+#themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
+# useBaseURL = false
+
+[params.author]
+name = "Daniel F. Dickinson"
+url = "https://www.danielfdickinson.ca"
+#avatar = "apple-touch-icon.png"
+
+[privacy]
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+disable = true
+
+[privacy.instagram]
+disable = true
+
+[privacy.twitter]
+disable = true
+
+[privacy.vimeo]
+disable = true
+
+[privacy.youtube]
+disable = true
+
+[menu]
+[[menu.main]]
+name = "Home"
+pageref = "/"
+weight = 1
+[[menu.main]]
+name = "About"
+pageref = "about/"
+weight = 20
+[[menu.main]]
+name = "Search"
+pageref = "about/search"
+weight = 40
+[[menu.main]]
+name = "Tags"
+pageref = "tags"
+weight = 9999999

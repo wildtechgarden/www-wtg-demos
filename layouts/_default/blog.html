@@ -1,0 +1,54 @@
+{{ define "main" -}}
+{{- $pctx := . -}}
+{{- $showChildPages := (cond (isset .Params "showchildpages") (.Params.showChildPages) (cond (isset site.Params "showchildpages") (site.Params.showChildPages) true))	-}}
+{{- if .IsHome -}}
+	{{- $showChildPages = or (cond (isset .Params "showchildpages") (.Params.showChildPages) false) (cond (isset site.Params "showchildpages") (site.Params.showChildPages) false) -}}
+{{- end -}}
+
+{{- $showChildCards := or (.Param "showChildCards") false -}}
+
+<main class="main layout__main">
+{{ if not .IsHome -}}
+	<h1 class="title">{{ replaceRE	`^(.+) \[.+\]$` "$1" .Title }}</h1>
+	{{- if findRE `^.+ \[.+\]$` .Title }}
+	<p class="subtitle">{{ replaceRE `^.+ \[(.+)\]$` "$1" .Title }}</p>
+	{{- end -}}
+{{- end }}
+
+{{ with .Content }}
+<div class="content">
+{{ . }}
+</div>
+
+{{ with $pctx.Param "page_endnote" -}}
+<div class="content content--endnote">
+{{ . | $pctx.RenderString }}
+</div>
+{{ end -}}
+
+<div class="content content--bottom">
+{{ if ne $pctx.Lastmod $pctx.PublishDate }}{{ partial "dates.html" $pctx }}{{ end -}}
+</div>
+{{ end }}
+
+{{- $pages := $pctx.Data.Pages.ByDate.Reverse -}}
+{{- if $pctx.IsHome -}}
+{{- $pages = where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections }}
+{{- end -}}
+{{- if $showChildCards -}}
+<div class="cards">
+{{ range where $pages "Params.card" "eq" true }}
+	{{ partial "card.html" (dict "Page" . "Caller" $pctx) -}}
+{{ end -}}
+</div>
+{{- else if $showChildPages }}
+{{- $paginator := .Paginate $pages -}}
+{{- range $paginator.Pages -}}
+{{ partial "summary.html" (dict "Page" . "Caller" $pctx) }}
+{{ end -}}
+
+{{ partial "pagination.html" . }}
+{{ end }}
+
+</main>
+{{ end }}

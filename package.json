@@ -1,0 +1,35 @@
+{
+  "name": "wtg-demos",
+  "version": "0.1.0",
+  "description": "Wild Tech 'Garden' top-level placeholder",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "pre-commit run --all-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildtechgarden/www-wtg-demos.git"
+  },
+  "keywords": [
+	"placeholder"
+  ],
+  "author": "Daniel F. Dickinson",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/wildtechgarden/www-wtg-demos/issues"
+  },
+  "homepage": "https://github.com/wildtechgarden/www-wtg-demos#readme",
+  "devDependencies": {
+    "html-validate": "^7.18.0",
+    "hyperlink": "^5.0.4",
+    "stylelint": "^15.10.1",
+    "stylelint-cli": "^1.3.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-scss": "^5.0.0",
+    "tap-spot": "^1.1.2",
+    "v8-compile-cache": "^2.3.0"
+  }
+}
