@@ -14,8 +14,7 @@ $grey-extra-light: lighten($black, 93.33%); // #eee
 $nearwhite: lighten($black, 97%); // #f7f7f7
 $white: #fff;
 
-$oldblue: #0072b9;
-$blue: darken(#5691d5, 10%);
+$blue: #0072b9;
 $red: #c00;
 $green: #43a808;
 $yellow: #fd0;
@@ -36,12 +35,12 @@ $blue-medium: lighten($blue, 40%);
 $blue-light: lighten($blue, 55%);
 $blue-extra-light: lighten($blue, 70%);
 
-$brand-nearblack: $nearblack;
-$brand-darker: $blue-darker;
-$brand-dark: $blue-dark;
-$brand-alt: $blue-lessdark;
-$brand-medium: $blue-medium;
-$brand: $blue;
-$brand-light: $blue-light;
-$brand-extra-light: $blue-extra-light;
+$brand-nearblack: $green-nearblack;
+$brand-darker: $green-darker;
+$brand-dark: $green-dark;
+$brand-alt: $green-lessdark;
+$brand-medium: $green-medium;
+$brand: $green;
+$brand-light: $green-light;
+$brand-extra-light: $green-extra-light;
 $brand-nearwhite: $nearwhite;

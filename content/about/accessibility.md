@@ -2,7 +2,7 @@
 aliases:
     - /accessibility/
     - /other/accessibility/
-title: "Accessibility statement [for Daniel F. Dickinson's site]"
+title: "Accessibility statement [for WTG demos placeholder site]"
 author: Daniel F. Dickinson
 date: 2021-10-15T05:57:11Z
 publishDate: 2021-10-15T05:57:11Z
@@ -12,6 +12,7 @@ summary: "Wild Tech 'Garden' makes their best effort to keep this site accessibl
 not meet that goal, please let them know."
 pageCanonical: false
 toCanonical: "https://www.wildtechgarden.ca/about/accessibility/"
+tags: accessibility
 ---
 
 ## Statement

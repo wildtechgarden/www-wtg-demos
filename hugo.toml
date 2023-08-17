@@ -76,15 +76,15 @@ copyright = """\
 """
 description = "Placeholder for top-level www.wtg-demos.ca website host (the main effort is in subsites)"
 dateformat = "2 January, 2006"
-#favicon = "apple-touch-icon.png" # Relative path to favicon in json feed, no leading slash.
+favicon = "favicon.png" # Relative path to favicon in json feed, no leading slash.
 feedlinks = true # Show feed links in the footer.
 footer = "[Accessibility](/about/accessibility) | [Privacy](/about/privacy-policy) | [Sitemap](/about/user-sitemap) | [Search](/about/search) | [Report an issue](https://github.com/wildtechgarden/www-wtg-demos/issues/new/choose)"
-#icon = "apple-touch-icon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
-#image = "images/daniel-beard-almost-floating-head-social.png" # Relative path to site image in JSON-LD, no leading slash.
+icon = "favicon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
+#image = "images/corner-rock-garden-pixelized-2400x1260-text-overlay.png" # Relative path to site image in JSON-LD, no leading slash.
 #imageMaxWidth = 400 # Max width for images added via figure shortcode.
-logo = false
-#logoHeight = 32
-#logoWidth = 32
+logo = true
+logoHeight = 32
+logoWidth = 32
 #mainSections= ["blog"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
 mobileMenu = true # Turn on a mobile menu on small screens.
 noImageConvert = false
@@ -95,7 +95,8 @@ realfavicongenerator = false # If full set of favicons, site manifest etc. exist
 redirectsDomains = [
 	"wtg-demos.ca",
 	"wtg-demos.com",
-	"www.wtg-demos.com"
+	"www.wtg-demos.com",
+	"wtgdeml.cluster051.hosting.ovh.net"
 ]
 
 redirectsExtra = []
