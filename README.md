@@ -2,7 +2,8 @@
 
 ## Status
 
-TBD
+[![pre-commit.ci
+status](https://results.pre-commit.ci/badge/github/wildtechgarden/www-wtg-demos/main.svg)](https://results.pre-commit.ci/latest/github/wildtechgarden/www-wtg-demos/main)
 
 ## Site
 
@@ -10,7 +11,7 @@ TBD
 
 ## Repository URL
 
-<https://github.com/wildtechgarden/wtg-demos>
+<https://github.com/wildtechgarden/www-wtg-demos>
 
 -------
 
