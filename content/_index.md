@@ -10,6 +10,6 @@ omitDates = true
 ## Demo sites hosted here
 
 * [DFD-Zen theme for Hugo](https://www.zen-theme-hugo-wtg.wtg-demos.ca/)
-* [Image handling module for Hugo](https://www.image-handling-mod.wg-demos.ca/)
+* [Image handling module for Hugo](https://www.image-handling-mod.wtg-demos.ca/)
 * [Mice: sample of very simple Javascript and CSS](https://www.mice.wtg-demos.ca/)
 * [Minimal test theme for Hugo](https://www.minimal-test-theme.wtg-demos.ca/)
